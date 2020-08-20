@@ -1,17 +1,15 @@
 const prompt = require("prompt-sync")();
-let pv=prompt("enter persent total value:")
-pv=parseFloat(pv);
-let rate=prompt("enter the interest rate: ")
-rate=parseFloat(pv);
-let year=prompt("for how many year: ")
-year=parseFloat(year)
-let percentrate=(pv*rate)/100;
-let interest= 1+percentrate;
-let step=Math.pow(interest,year)
-// Math.pow((1+(rate/100)),year);
-step=step-1;
+let p=prompt("Enter initial total value:")//p is cassh on account inital
+p=parseFloat(p);
+let rate=prompt("enter the interest rate per year: ")//interesst rate
+rate=parseFloat(rate);
+let year=prompt("for how many year: ")// for how many year
+year=parseInt(year)
+let calc=1+(rate/100);
+let total_amount=p*Math.pow(calc,year);
 
-let fv=pv*step;
+console.log(year)
+console.log(calc);
+console.log("your interest for"+" "+year+" year is ="+total_amount)
 
 
-console.log("your interest for"+" "+year+"year is ="+fv)
