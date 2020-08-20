@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>odd even catagorizzing</title>
+    <script>
+        function quadratic()
+        {
+           let a= document.getElementById("num1").value;
+           let b= document.getElementById("num2").value;
+           let c= document.getElementById("num3").value;
+           a=parseInt(a);
+           b=parseInt(b);
+           c=parseInt(c);
+           
+           var discr = b * b - 4 * a * c;
+            var root1, root2;
+            if (discr >= 0) {
+            var sq = Math.sqrt(discr);
+            root1 = (-b + sq) / (2 * a);
+            root2 = (-b - sq) / (2 * a);
+                            }
+            // Display the roots to the user.
+            document.getElementById('result').innerHTML=root1 ;
+            //document.getElementById('result').innerHTML=root2 ;
+                    }
+                
+    </script>
+</head>
+<body>
+
+    <h3>enter value of a:</h3><br>
+    <input type="text" id="num1">
+    <h3> enter value b:</h3>
+    <input type="text" id="num2">  
+    <h3>enter value of c:</h3>
+    <input type="text" id="num3">
+    <button type="button" id="btn1" onclick="quadratic()">the soluntion for the give quardatic function=</button>
+    <div id="result"></div>
+
+</body>
+
+</html>
