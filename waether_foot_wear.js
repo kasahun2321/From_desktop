@@ -19,3 +19,5 @@ else if(x==="snow")
 }
 console.log("weather   wearing style")
 console.log(  x+"\t"+"  "+wear)
+
+//indentation is very important. 
