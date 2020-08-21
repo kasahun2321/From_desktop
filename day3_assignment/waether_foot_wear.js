@@ -30,7 +30,7 @@ if (a<3)
 }
 else 
 {
-    mesage="good by "
+    mesage="good by ";
 }
 
 console.log(mesage);

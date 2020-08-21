@@ -6,7 +6,7 @@ value=parseInt (value)
 
 if (value%2===0)
 {
-    console.log(value+" is evene number ");
+    console.log(value+" is even number ");
 
 }
 else

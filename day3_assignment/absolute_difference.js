@@ -1,4 +1,10 @@
 
+let userinput=require('prompt-sync')();
+
+let x =userinput("Enter first number  :");
+let y =userinput("Enter second number  :");
+x=parseFloat(x);
+y=parseFloat(y);
 
 z=x-y
 
