@@ -2,12 +2,17 @@
 const input = require("prompt-sync")();
 let i,j;
 
+/*
+11111
+22222
+33333
+44444*/
 for (i=1; i<=5;i++)
 {
   let z="";
     for(j=0;j<5;j++)
     {
-      z+=i+""; 
+      z+=i; 
       //console.log(z); 
     
       
@@ -15,6 +20,11 @@ for (i=1; i<=5;i++)
     console.log(z)
  }
 //traingle star 
+/*
+*
+**
+***
+****/
 let limit='';
 let user=input("what is the max star");
 user=parseInt(user)
