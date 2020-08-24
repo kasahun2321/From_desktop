@@ -122,3 +122,36 @@ while(rand<=5)
 console.log(z);
 console.log("bingoo");
 
+///reverse 90  degre angle
+let np=prompt("enter any number ")
+np=parseInt(np);
+let  j, k=2*n-2;
+ 
+// outer loop to handle number of rows     
+for(i=0; i<np; i++)
+{
+    let zz=""
+
+    // inner loop to handle number spaces
+    for(j=0; j<k; j++)
+    {
+        // printing spaces first
+        
+        console.log(zz);
+    }
+     
+    // decrementing k after each loop
+    k = k - 2;
+     
+    //  inner loop to handle number of columns
+    //  values changing acc. to outer loop
+    for(j=0; j<=i; j++)
+    {
+        // printing stars
+        
+        console.log(zz+"* ");
+    }
+     
+    // print new line for next row
+    console.log("\n");
+}
