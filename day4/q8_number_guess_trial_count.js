@@ -23,4 +23,4 @@ do
     }
 }while(gues!=38)
 message=gues+"is correct but you tried"
-console.log(message+"trail"+count)
+console.log(message+"trails is ="+count +"  times ")

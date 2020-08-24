@@ -8,5 +8,5 @@ y=3*gues;
 a=gues*gues;
 z=gues*gues*gues;
 
-console.log("gues"+"  2*gues"+ "  3*gues"+"   ZxZxZ"+"    ZxZ")
+console.log("gues"+"  2*gues"+ "  3*gues"+"   gu*gu"+"    gu*gu*gu")
 console.log(gues+"\t"+x+"\t"+y+"\t"+a+"\t"+z)

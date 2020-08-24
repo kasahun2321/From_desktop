@@ -1,10 +1,11 @@
 
-for(let i=0; 1<10;i++)
+for(let i=0; i<10;i++)
 {
     let row="";
-    for(let j=0;j<10;J++)
+    for(let j=0;j<=10;j++)
     {
-        row+=i*j+"\t";
+        row+=i*j;
+        console.log(row);
     }
-    console.log(row);
+   
 }
