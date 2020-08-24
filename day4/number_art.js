@@ -117,10 +117,25 @@ last pattern
 1
 */
 
-for (i=5; i>=1;i--)
+// for (i=5; i>=1;i--)
+// {
+//   let z="";
+//     for(j=1;j<=i;j++)
+//     {
+//       z+=i+"";  
+      
+//     }
+//     console.log(z+"\t"); 
+// }
+
+
+//8
+
+
+for (i=5; i>=1;i++)
 {
   let z="";
-    for(j=1;j<=i;j++)
+    for(j=1;j<=5;j++)
     {
       z+=i+"";  
       

@@ -1,3 +1,5 @@
+const prompt=require("prompt-sync")();
+
 // let x = 1;
 // let y = '2';
 // let z = true;
@@ -85,3 +87,38 @@ while(d<3)
     console.log(d)
     d++;
 }
+let i = 3;
+do {
+     console.log(i)
+     i--
+} while (i>2);
+
+ i = 3;
+do {
+     console.log(i)
+     i--
+} while (i>3)
+
+
+let n;
+n=prompt("enter the exaxt agge");
+n=parseInt(n);
+
+for (;n!=18;){
+    n=prompt("enter the exaxt agge");
+    n=parseInt(n);
+}
+console.log("know you are right")
+
+
+let rand=(Math.random())*6+1;
+let z=0;
+while(rand<=5)
+{
+    z=z+rand;
+    console.log(z);
+    rand=(Math.random())*6+1;
+}
+console.log(z);
+console.log("bingoo");
+

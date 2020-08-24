@@ -38,7 +38,7 @@ for (i=1; i<=5;i++)
   let z="";
     for(j=1;j<=i;j++)
     {
-      z+=j+"";  
+      z+=j;  
       
     }
     console.log(z+"\t");
