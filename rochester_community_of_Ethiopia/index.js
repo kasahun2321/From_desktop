@@ -51,3 +51,37 @@ function login()
   }
 
 }
+///
+window.onload = () => {
+
+  /*
+  <!--
+  🍧 Foody-Foods.in 😳💕
+  
+  🍧 Coded by: Aakaanksha Vashisht💕
+  🍧
+  🍧 Date of submission: 23-Aug-2020
+  🍧
+  ❌ Don't copy(❌) without permission
+  🍧 Owner: Aakaanksha💕©️
+  🍧
+  🍧 Made with alot of hardwork & love♥️😍
+  🍧 Hope you'll love it:   
+     (🍧🍰🍬🍨🍦🍭🍧🍰🍨🍬🍭🍦)
+     ----------------------------
+  -->
+  */
+    
+    const navBtn = document.getElementById("navBtn");
+    const navContents = document.getElementById("navContents");
+    
+    
+    navBtn
+      .addEventListener("click", () => {
+         navContents
+           .classList
+             .toggle("toggleNav");
+      });
+    
+  }
+
