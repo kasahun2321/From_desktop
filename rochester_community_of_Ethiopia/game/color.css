@@ -1,0 +1,20 @@
+body {
+	margin: 0;
+	position: fixed;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+section {
+	width: 100vw;
+	height: 50vh;
+	padding: 10px;
+	color: #222;
+	position: absolute;
+	transform: translateY(50%);
+	text-align: center;
+}
+canvas{
+	border:1px solid silver;
+	box-shadow: 0 0 5px black;
+}
