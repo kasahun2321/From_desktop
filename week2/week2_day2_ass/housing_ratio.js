@@ -18,24 +18,24 @@ let input=con(`
 ====press 2 to calculte the living volume
 ====press 3 to calculte the roof volume
 ====press 4 to calculte the triangle\n`);
-switch(input)
-{
-    case 1:
-        houseVolume(width,depth,height,sweep);
-        break;
+// switch(input)
+// {
+//     case 1:
+//         houseVolume(width,depth,height,sweep);
+//         break;
         
-    case 2:
-        livingVolume(width,depth,height)
-        break;
-    case 3:
-        roofVolume(width,depth,sweep)
-        break;
-    case 4:
-        traingleArea(height,width,sweep);
-        break;
-    default:
-        console.log("user inserted wrong number try again");
-}
+//     case 2:
+//         livingVolume(width,depth,height)
+//         break;
+//     case 3:
+//         roofVolume(width,depth,sweep)
+//         break;
+//     case 4:
+//         traingleArea(height,width,sweep);
+//         break;
+//     default:
+//         console.log("user inserted wrong number try again");
+// }
 
 
 
@@ -45,6 +45,7 @@ function houseVolume(width,depth,height,sweep)
 {
     livingVolume()+roofVolume();
   
+    
     //volume+=width*depth*height*sweep;
 
 }
