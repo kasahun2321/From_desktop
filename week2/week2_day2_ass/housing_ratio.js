@@ -43,8 +43,9 @@ switch(input)
 
 function houseVolume(width,depth,height,sweep)
 {
+    livingVolume()+roofVolume();
   
-    volume+=width*depth*height*sweep;
+    //volume+=width*depth*height*sweep;
 
 }
 
@@ -58,7 +59,7 @@ volume+=width*depth*sweep;
 }
 function traingleArea(a,b,c)
 {
-volume+=a*b*c;
+volume+=(a+b+c)/2;
 }
 
 console.log("the volume is :"+ volume);
