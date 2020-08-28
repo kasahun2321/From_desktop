@@ -1,0 +1,27 @@
+
+<html>
+    <head><title>q4 groccery</title></head>
+    
+      <script>
+      function myFunction() {
+         
+         let  box = parseFloat(document.getElementById('firstnumber').value);
+          let no_stack = parseFloat(document.getElementById('secondnumber').value);
+    
+          let result=box/no_stack;
+          result=Math.ceil(result)
+          document.getElementById('answer').value = result;
+      }
+      </script>
+    
+    
+    <body>
+      <h1>groccery managemnent</h1>
+      Totale box :  <input type="number" id="firstnumber"><br><br>
+      number of stack: <input type="number" id="secondnumber"><br>
+      <button type="button" onclick="myFunction()">Submit</button><br>
+       <input type="number" id="answer">
+    
+    </body>
+    </html>
+    
