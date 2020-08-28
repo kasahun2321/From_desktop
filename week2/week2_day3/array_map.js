@@ -1,23 +1,20 @@
 
-let fruit=["apple","ball","cat"];
+let fruit = ["apple", "ball", "cat"];
 
-let output;
- function mapping(fruit_in_number)
+let output = [];
+function mapping(fruit) {
 
- {
+    for (let i = 0; i < fruit.length; i++) {
+        output[i] = fruit[i].length;
 
-    for(let i=0;i<fruit_in_number.length;i++)
- {  
-     fruit_in_number[i]=fruit_in_number[i].length;
-     output=console.log(fruit_in_number[i]);
- }
- }
- console.log(mapping(fruit));
+    }
+    return output;
+}
+// function callig
+mapping(fruit);
+/// then printing to the console 
+console.log(output)
 
-//  for(let i=0;i<fruit.length;i++)
-//  {  let char_length=[];
-//      char_length[i]=fruit[i].length;
-//      output=console.log(char_length[i]);
-//  }
-
- 
+/// printing out all string length using maping function.
+const newMap = fruit.map(n => n.length)
+console.log(newMap)

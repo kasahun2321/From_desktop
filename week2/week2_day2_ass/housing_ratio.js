@@ -3,21 +3,22 @@ let width =con("Enter the width:");
 width=parseFloat(width);
 let height =con("Enter the height:");
 height=parseFloat(height);
-let sweep =con("Enter the sweep:");
-sweep=parseFloat(sweep);
 let depth =con("Enter the depth:");
 depth=parseFloat(depth);
+let sweep =con("Enter the sweep:");
+sweep=parseFloat(sweep);
+
 
 let volume=0;
 
-let input=con(`
-++++++++++++++++++++++++++++++++++++++++++++++
-    please select from the menu list 
-==============================================
-====press 1 to calculte the house volume
-====press 2 to calculte the living volume
-====press 3 to calculte the roof volume
-====press 4 to calculte the triangle\n`);
+// let input=con(`
+// ++++++++++++++++++++++++++++++++++++++++++++++
+//     please select from the menu list 
+// ==============================================
+// ====press 1 to calculte the house volume
+// ====press 2 to calculte the living volume
+// ====press 3 to calculte the roof volume
+// ====press 4 to calculte the triangle\n`);
 // switch(input)
 // {
 //     case 1:
@@ -43,24 +44,28 @@ let input=con(`
 
 function houseVolume(width,depth,height,sweep)
 {
-    livingVolume()+roofVolume();
-  
-    
-    //volume+=width*depth*height*sweep;
+    volume= livingVolume(width,depth,height)+roofVolume(width,depth,sweep);
+  return volume;
 
 }
 
 function livingVolume(width,depth,height)
 {
-volume+=width*depth*height;
+volume=width*depth*height;
+return volume;
 }
 function roofVolume(width,depth,sweep)
 {
-volume+=width*depth*sweep;
+volume=traingleArea(depth,sweep,sweep)+width;
+return volume;
 }
-function traingleArea(a,b,c)
+function traingleArea(sweep, sweep,depth)
 {
-volume+=(a+b+c)/2;
+    let s= (sweep+sweep+depth)/2
+    let value=s*((s-sweep)*(s-sweep)*(s-depth));
+    volume=Math.sqrt(value);
+    return volume;
 }
 
-console.log("the volume is :"+ volume);
+houseVolume(width,depth,height,sweep);
+console.log("the volume of the house :"+ volume+"m^3");
