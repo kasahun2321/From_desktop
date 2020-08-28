@@ -3,16 +3,7 @@ let input=prompt("Enter a number correspond to the gift order")
 input=parseInt(input);
 
 const gift_list=[
-    "1 partridge in a pear tree",
-    "2 two turtle doves",
-    "3 three French hens",
-    "4 four calling birds",
-    "5 five golden rings",
-    "6 six geese a laying",
-    "7 seven swans a swimming",
-    "8 eight maids a milking",
-    "9 nine ladies dancing",
-    "10 ten lords a leaping",
+    "1 ords a leaping",
     "11 eleven pipers piping",
     "12 twelve drummers drummin"]
     

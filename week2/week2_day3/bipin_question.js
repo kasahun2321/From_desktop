@@ -44,3 +44,30 @@ function prefix(a, b) {
  
 let output = prefix(x,y);
 console.log(output);
+
+
+////////////error logic but work fine code
+function replaceAll(string, parm1, param2) {
+  let arr = string.split(" ");
+  let brr = [];
+  let i;
+for ( i = 0; i < arr.length - 1; i++) {
+    if (arr[i] == parm1) {
+      arr[i] == param2;
+    }
+ 
+    brr[i] = arr[i];
+ 
+  }
+  return brr;
+ 
+}
+ 
+let string = "She said Hi and I replied Hi";
+let b = "Hi";
+let c = "Hello";
+ 
+let output = replaceAll(string, b, c)
+
+
+console.log(output);
