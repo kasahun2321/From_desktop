@@ -26,48 +26,50 @@
 
 // "use strict";
  
-let x = "disable";
-let y = "distasteful";
+// let x = "disable";
+// let y = "distasteful";
  
-function prefix(a, b) {
-  let arr = a.split("");
-  let brr = b.split("");
-  let sum = "";
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === brr[i] )
-    {
-      sum = sum + arr[i]
-    }
-  }
-  return sum;
-}
+// function prefix(a, b) {
+//   let arr = a.split("");
+//   let brr = b.split("");
+//   let sum = "";
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === brr[i] )
+//     {
+//       sum = sum + arr[i]
+//     }
+//   }
+//   return sum;
+// }
  
-let output = prefix(x,y);
-console.log(output);
+// let output = prefix(x,y);
+// console.log(output);
 
 
-////////////error logic but work fine code
-function replaceAll(string, parm1, param2) {
-  let arr = string.split(" ");
-  let brr = [];
-  let i;
-for ( i = 0; i < arr.length - 1; i++) {
-    if (arr[i] == parm1) {
-      arr[i] == param2;
-    }
+// ////////////error logic but work fine code
+// function replaceAll(string, parm1, param2) {
+//   let arr = string.split(" ");
+//   let brr = [];
+//   let i;
+// for ( i = 0; i < arr.length - 1; i++) {
+//     if (arr[i] == parm1) {
+//       arr[i] == param2;
+//     }
  
-    brr[i] = arr[i];
+//     brr[i] = arr[i];
  
-  }
-  return brr;
+//   }
+//   return brr;
  
-}
+// }
  
-let string = "She said Hi and I replied Hi";
-let b = "Hi";
-let c = "Hello";
+// let string = "She said Hi and I replied Hi";
+// let b = "Hi";
+// let c = "Hello";
  
-let output = replaceAll(string, b, c)
+// let output = replaceAll(string, b, c)
 
 
-console.log(output);
+// console.log(output);
+
+

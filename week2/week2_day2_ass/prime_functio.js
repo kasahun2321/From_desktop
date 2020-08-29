@@ -1,23 +1,27 @@
 const con = require("prompt-sync")();
-let number = con("enter any number");
+let number = con("Enter any number you want to check :");
 number = parseFloat(number);
-let isPrime = "is prime"
-function prime(num) {
+
+function check_prime(num) {
   let x = num;
-
-
+  let isPrime =false;
   for (let i = 2; i < x; i++) {
-    if (x % i == 0) {
-      isPrime = "is not prime"
-      break;
+    if (x % i === 0) {
+      isPrime =false; 
+     break;
+    }
+    else
+    {
+      isPrime=true
     }
   }
 
-
-  console.log(x + ": " + isPrime);
+return isPrime;
+  
 }
 
 
-prime(number);
+let result = check_prime(number);
+console.log(number + ": " + result);
 
 

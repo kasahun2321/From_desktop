@@ -1,14 +1,13 @@
 const con = require("prompt-sync")();
-let number = con("Enter the value in degree farhnaite");
-number = parseFloat(number);
+let user_input = con("Enter the value in degree farhnaite :");
+user_input = parseFloat(user_input);
 let Celsius_scale;
 
 function farhToCels(fara) {
 
-    Celsius_scale = (fara - 32) / 1.8
-    console.log(fara + "^F" + " in  celcies scale :" + Celsius_scale + " C")
-
-
+    Celsius_scale = (fara - 32) / 1.8;
+    return Celsius_scale;
 }
 
-farhToCels(number)
+let result = farhToCels(user_input);
+console.log(user_input + " ^F " + "to  celcies scale :" + result + " ^C")
