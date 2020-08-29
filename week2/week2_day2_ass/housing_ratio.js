@@ -1,3 +1,5 @@
+"use strict";
+
 const con = require("prompt-sync")();
 let width = con("Enter the width:");
 width = parseFloat(width);
@@ -56,7 +58,7 @@ function roofVolume(width, depth, sweep) {
   volume = traingleArea(depth, sweep, sweep) + width;
   return volume;
 }
-function traingleArea(sweep, sweep, depth) {
+function traingleArea(sweep , depth) {
   let s = (sweep + sweep + depth) / 2
   let value = s * ((s - sweep) * (s - sweep) * (s - depth));
   volume = Math.sqrt(value);

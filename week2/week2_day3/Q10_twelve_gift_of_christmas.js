@@ -1,3 +1,5 @@
+"use strict";
+
 const prompt=require("prompt-sync")();
 let input=prompt("Enter a number correspond to the gift order")
 input=parseInt(input);

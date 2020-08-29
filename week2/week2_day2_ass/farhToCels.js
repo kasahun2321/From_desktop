@@ -1,3 +1,5 @@
+"use strict";
+
 const con = require("prompt-sync")();
 let user_input = con("Enter the value in degree farhnaite :");
 user_input = parseFloat(user_input);

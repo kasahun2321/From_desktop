@@ -1,3 +1,5 @@
+"use strict";
+
 const con = require("prompt-sync")();
 let number = con("Enter any number you want to check :");
 number = parseFloat(number);

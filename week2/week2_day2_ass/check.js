@@ -6,6 +6,8 @@ let xx = parseInt(number)
 console.log("the number " + number)
 console.log("the number " + xx)
 
+"use strict";
+
 console.log(typeof number);
 console.log(typeof xx);
 let diif = number - xx;

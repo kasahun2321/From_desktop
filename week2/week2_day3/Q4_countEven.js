@@ -1,5 +1,7 @@
 
 
+"use strict";
+
 let list =[12,22,44,55,6,1,6,9,80,90]
 let leg=list.length;
 let count=0;
