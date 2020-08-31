@@ -1,0 +1,41 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> <!--meta is self closing tag-->
+    <title>techno stack </title>
+    <script>
+function sayhelo()
+{
+    let x=prompt("what is your name ?")
+    alert("hello"+x);
+}
+function showfullname()
+{
+    let x=document.getElementById("fname").value;
+    let y=document.getElementById("lname").value;
+    document.getElementById("output").innerHTML="hello"+x+" "+y;
+}
+
+    </script>
+</head>
+<body>
+
+<h1>This is kasahun from MIU </h1>
+first_name: <input id="fname" type="text">
+last_naem: <input id="lname" type="text">
+<button onclick="showfullname()">show full name </button>
+<p  id="output"></p>
+
+<p>life is up and down through my jounrney i passed alot of chalenging time ,i was worn
+    in 1992 in ethiopia aroung small vilage called delo
+
+<a href="https://www.imdb.com/video/vi23051801?ref_=hp_hp_e_3&listId=ls053181649">this is my favaoratite move ever i see</a>
+</p>
+textbox
+<!--comment doesn't matter on actiul code -->
+<input type="textarea" name=" textarea" id=""><br>
+<textarea name="large space " id="" cols="30" rows="10"></textarea><br>
+<button onclick="sayhelo()"> click me button </button><br>
+<input type="button" value="clickme()"><br>
+</body>
+</html>

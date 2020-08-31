@@ -1,12 +1,27 @@
 let car={
-    make:"",
-    model:"",
-    year:"",
+    make:"korea",
+    model:"KEA",
+    year:"2012",
     odometer:0,
     serviceCount:0,
-    service:function(){},
-    odometercount:function(){},
-    reset:function(){}    
+    service:function(timer){
+     let count=timer;
+     count=count+1;
+      return count;
+
+    },
+    getodometerreading:function(mile){
+      let millage=mile;
+      return millage;
+    },
+    reset:function(x,y){
+
+      let servicetime=x*0;
+      let milleageodometer=y*0;
+      return [servicetime,milleageodometer];
+
+
+    }    
 
 }
 
@@ -19,19 +34,13 @@ var person = {
     }
   };
 
-function service()
-{
-    return 0;
+let a=car.make;
+let b=car.model;
+let c=car.year;
+let d=car.serviceCount.service();
+let e=car.odometer.getodometerreading();
+let f=car.reset()
 
-}
-function odometercount()
-{
- return 0;
-}
-function reset()
-{
-return 0;
-}
-
-let callcar=car.service();
-console.log(callcar);
+const whole=[a,b,c,d,e];
+console.log(whole)
+console.log("the service and odometer reades"+f)

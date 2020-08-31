@@ -3,7 +3,7 @@
 function ExtractGivenName(fullname)
 {
 let name=fullname.split(",")
-return name[0];
+return name[1];
 
 }
 

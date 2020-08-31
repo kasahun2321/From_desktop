@@ -4,6 +4,8 @@
 const p=require ("prompt-sync")();
 let  input=p("enter YOUR COMMAND ");
 input=input.toLowerCase();
+
+
 // while( input!=='stop')
 // {
 //     input=p("enter same text ")
