@@ -5,8 +5,6 @@ function titled(s)
     for(let i=0; i<temp.length;i++)
     {
         temp[i]=temp[i][0].toUpperCase()+temp[i];
-        
-
     }
 return temp;
 }

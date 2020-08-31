@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>chapter four questino no 3</title>
+    <script>
+        function display() {
+            let a = document.getElementById("fname").value;
+            let b = document.getElementById("lname").value;
+            let c = document.getElementById("email").value;
+            let d = document.getElementById("birthday").value;
+            let e = a + " " + b + " " + c + " " + d;
+            document.getElementById("result").innerHTML = e;
+        }
+
+    </script>
 </head>
+
 <body>
-    
+
+    <h1>simple registration form</h1>
+    <fieldset>
+        <legend>simple form to include basic tag we discus in a clas:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <input type="submit" value="Submit" onclick="display()">
+    </fieldset>
+
+    <div>
+        <h3>this is division tag for demonastration only </h3>
+    </div>
+
+    <h1>the allover information from the user input </h1>
+    <div id="result">
+
+    </div>
+
+
 </body>
+
 </html>
