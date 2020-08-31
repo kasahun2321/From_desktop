@@ -2,22 +2,21 @@ let car={
     make:"korea",
     model:"KEA",
     year:"2012",
-    odometer:0,
-    serviceCount:0,
-    service:function(timer){
-     let count=timer;
-     count=count+1;
+    odometer:2300,
+    serviceCount:2,
+    service:function(){
+     let count=this.serviceCount+1;
       return count;
 
     },
-    getodometerreading:function(mile){
-      let millage=mile;
-      return millage;
+    getodometerreading:function(){
+     
+      return this.odometer;;
     },
-    reset:function(x,y){
+    reset:function(){
 
-      let servicetime=x*0;
-      let milleageodometer=y*0;
+      let servicetime=this.serviceCount*0;;
+      let milleageodometer=this.odometer*0;
       return [servicetime,milleageodometer];
 
 
@@ -25,22 +24,15 @@ let car={
 
 }
 
-var person = {
-    firstName: "John",
-    lastName : "Doe",
-    id       : 5566,
-    fullName : function() {
-      return this.firstName + " " + this.lastName;
-    }
-  };
+
 
 let a=car.make;
 let b=car.model;
 let c=car.year;
-let d=car.serviceCount.service();
-let e=car.odometer.getodometerreading();
+let d=car.service();
+let e=car.getodometerreading();
 let f=car.reset()
 
-const whole=[a,b,c,d,e];
-console.log(whole)
-console.log("the service and odometer reades"+f)
+const car_data=[a,b,c,d,e];
+console.log(car_data)
+console.log("the service and odometer reades:"+"the service count:"+f[0]+"   Odometer reader "+f[1])
