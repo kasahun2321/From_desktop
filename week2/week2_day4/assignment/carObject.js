@@ -25,11 +25,16 @@ let car={
 }
 
 
+let x=car;
+console.log(x)
 
 let a=car.make;
 let b=car.model;
 let c=car.year;
 let d=car.service();
+console.log(d)
+let d1=car.service();
+console.log(d1)
 let e=car.getodometerreading();
 let f=car.reset()
 
