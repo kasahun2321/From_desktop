@@ -1,14 +1,9 @@
-input
-{
 
-}
-
-label
+body
 {
-    font: 100;
+    background-color: lightgreen;
 }
 legend
 {
-    align-content: center;
-    border-block-end-style: dashed;
+    text-align: center;
 }

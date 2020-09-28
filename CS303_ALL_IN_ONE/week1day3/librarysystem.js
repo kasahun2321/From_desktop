@@ -100,3 +100,84 @@ function showid() {
 
 }
 //console.log(library)
+/**
+ * event handler to display library title scrambled by word size
+ * @returns{undefined }
+ */
+
+function scramble()
+{
+    /**
+     * get all the title
+     * put all the words into array
+     * find all word of different length and put each into own array
+     * join each array back to string array of string 
+     * join the array of string into single string with \n line breaks
+     * display in the text area
+     */
+
+     const alltite=findtitle();
+     const wordstringarray=null;
+     const scramblestring=wordstringarray.join("\n");
+     textarea.innerHTML=scramblestring;
+
+}
+
+/**
+ * 
+ * @param{array}accept array from library var
+ * @returns{string}join all the array given and print string
+ */
+
+
+function scramble() {
+  let allTitles = "";
+  let tempArr = [];
+  for (let i = 0; i < library.length; i++) {
+    tempArr[i] = library[i].title;
+  }
+  tempArr.sort(function (a, b) {
+    //this function sorts the titles aplphabetically and ignore upper case and lower case
+    let x = a.toLowerCase();
+    let y = b.toLowerCase();
+    if (x < y) {
+      return -1;
+    }
+    if (y < x) {
+      return 1;
+    }
+    return 0;
+  });
+
+  for (let j = 0; j < tempArr.length; j++) {
+    let space = " ";
+
+    allTitles += tempArr[j];
+    allTitles = allTitles + space;
+  }
+  allTitles = allTitles.trim(); // trim all the space of allTitles
+
+  allTitles = allTitles.split(" "); // convert allTitles into an array of words
+  let wordsLength = allTitles.map((words) => words.length); // create a new array that contains the value of word's length
+  wordsLength = wordsLength.sort((a, b) => a - b);
+  wordsLength = wordsLength.filter(
+    (value, index) => wordsLength.indexOf(value) === index // remove all the duplicate value inside the array
+  );
+
+  let sameWordLength = [];
+  let scrambledTitles = "";
+  for (let i = 0; i < wordsLength.length; i++) {
+    sameWordLength = allTitles.filter(
+      (words) => words.length === wordsLength[i] //create new arrays that contain all the words that have the same word length
+    );
+    scrambledTitles += sameWordLength.join(" "); //convert all the same word length arrays into a string
+    scrambledTitles = scrambledTitles + "\r\n";
+  }
+
+  console.log(scrambledTitles);
+
+  let textArea = document.getElementById("display");
+  textArea.innerHTML = scrambledTitles;
+}
+
+console.log(scramble());
